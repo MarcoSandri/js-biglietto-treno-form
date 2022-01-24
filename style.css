@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #b91450;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 2rem 0;
+}
+
+form {
+    height: 100%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+input,
+select {
+    height: 2.2rem;
+    font-size: 1.2rem;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #b91450;
+    
+}
+
+button {
+    font-size: 1.4rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: #b91450;
+    font-weight: 700;
+
+}
+
+.col {
+    margin: 0 2rem;
+}
+
+.col div {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.container {
+    height: 300px;
+    max-width: 1000px;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #000000;
+    padding: 2rem;
+    color: #b91450;
+}
+
+.container.show {
+    border-radius: 0px;
+    color: #000000;
+    text-align: left;
+}
+
+.show .row {
+    height: 100%;
+}
+
+.ticket .col {
+    height: 100%;
+}
+
+.ticket .col.name-container{
+    background-color: gray;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Biglietto form</title>
+</head>
+<body>
+    
+    <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+    <div class="container form">
+        <div class="row">
+            <div class="col">
+                <div>Nome Cognome</div>
+                <input type="text" id="name">
+            </div>
+            <div class="col">
+                <div>Km da percorrere</div>
+                <input type="number" step="0.5" id="distance">
+            </div>
+            <div class="col">
+                <div>Fascia d'età</div>
+                <select id="discount">
+                    <option value="adult">Maggiorenne</option>
+                    <option value="under">Minorenne</option>
+                    <option value="over">Over 65</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <button class="col" id="calculate">Genera</button>
+            <button class="col">Annulla</button>
+        </div>
+    </div>
+
+    <h1>IL TUO BIGLIETTO</h1>
+    <div class="container show">
+        <h2>DETTAGLIO PASSEGGERI</h2>
+        <div class="ticket row">
+            <div class="col name-container">
+                <h2>NOME PASSEGGERO</h2>
+                <h3 id="user"></h3>
+            </div>
+            <div class="col">
+                <h3>Offerta</h3>
+                <span id="offer"></span>
+            </div>
+            <div class="col">
+                <h3>Carrozza</h3>
+                <span id="carriage"></span>
+            </div>
+            <div class="col">
+                <h3>Codice CP</h3>
+                <span id="code"></span>
+            </div>
+            <div class="col">
+                <h3>Costo Biglietto</h3>
+                <span id="price"></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script text="text/javascript" src="main.js"></script>
+</body>
+</html>
