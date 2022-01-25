@@ -12,16 +12,16 @@
     <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
     <div class="container form">
         <div class="row">
-            <div class="col">
-                <div>Nome Cognome</div>
+            <div class="col passenger">
+                <div class="label">Nome Cognome</div>
                 <input type="text" id="name">
             </div>
             <div class="col">
-                <div>Km da percorrere</div>
+                <div class="label">Km da percorrere</div>
                 <input type="number" step="0.5" id="distance">
             </div>
             <div class="col">
-                <div>Fascia d'età</div>
+                <div class="label">Fascia d'età</div>
                 <select id="discount">
                     <option value="adult">Maggiorenne</option>
                     <option value="under">Minorenne</option>
@@ -35,10 +35,10 @@
         </div>
     </div>
 
-    <h1>IL TUO BIGLIETTO</h1>
-    <div class="container show">
+    <h1 class="hidden">IL TUO BIGLIETTO</h1>
+    <div class="container result" id="hidden">
         <h2>DETTAGLIO PASSEGGERI</h2>
-        <div class="ticket row">
+        <div class="row ticket">
             <div class="col name-container">
                 <h2>NOME PASSEGGERO</h2>
                 <h3 id="user"></h3>

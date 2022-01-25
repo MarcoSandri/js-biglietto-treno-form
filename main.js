@@ -8,13 +8,12 @@ let discountedPrice;
 calculate.addEventListener('click',
 
     function() {
-        
-        
+
         let name = document.getElementById("name").value;
         let distance = document.getElementById("distance").value;
 
         if (discount.value == "adult") {
-            document.getElementById('offer').innerHTML = "Tariffa ordinaria";
+            document.getElementById('offer').innerHTML = "Biglietto Standard";
             discountedPrice = price * distance;
             document.getElementById('price').innerHTML = discountedPrice.toFixed(2) + "€"; 
 

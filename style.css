@@ -18,8 +18,22 @@ h1 {
     margin: 2rem 0;
 }
 
-form {
-    height: 100%;
+input,
+select {
+    height: 2rem;
+    width: 200px;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+}
+
+button {
+    font-size: 1.4rem;
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: #b91450;
+    margin: 0 1rem;
+    font-weight: 700;
+    
 }
 
 .row {
@@ -28,63 +42,54 @@ form {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
 }
 
-input,
-select {
-    height: 2.2rem;
-    font-size: 1.2rem;
-    text-align: center;
-    border-radius: 5px;
-    border: 1px solid #b91450;
-    
-}
-
-button {
-    font-size: 1.4rem;
-    border-radius: 5px;
-    padding: 0.5rem;
-    color: #b91450;
-    font-weight: 700;
-
-}
-
-.col {
-    margin: 0 2rem;
-}
-
-.col div {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
+.label {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
 }
 
 .container {
-    height: 300px;
+    height: 250px;
     max-width: 1000px;
     width: 90%;
     background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px #000000;
     padding: 2rem;
-    color: #b91450;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.container.show {
+.container.form {
+    box-shadow: 0 10px 30px #000000;
+    color: #b91450;
+    border-radius: 20px;
+}
+
+.container.result {
     border-radius: 0px;
     color: #000000;
     text-align: left;
 }
 
-.show .row {
+.row.ticket {
     height: 100%;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
 }
 
-.ticket .col {
+.row.ticket .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
+    padding: 1rem 0;
 }
 
-.ticket .col.name-container{
+.row.ticket .col.name-container {
     background-color: gray;
+    height: 100%;
+    padding: 1rem;
+    justify-content: flex-start;
 }
