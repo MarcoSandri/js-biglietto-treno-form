@@ -93,3 +93,10 @@ button {
     padding: 1rem;
     justify-content: flex-start;
 }
+
+#hidden {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}

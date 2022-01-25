@@ -9,6 +9,8 @@ calculate.addEventListener('click',
 
     function() {
 
+        let hidden = document.getElementById("hidden");
+        hidden.style.display = "flex"
         let name = document.getElementById("name").value;
         let distance = document.getElementById("distance").value;
 
@@ -41,7 +43,9 @@ calculate.addEventListener('click',
 cancel.addEventListener('click',
 
     function() {
-        
+        let hidden = document.getElementById("hidden");
+        hidden.style.display = "none"
+
         document.getElementById("distance").value = " ";
         document.getElementById("name").value = " ";
         document.getElementById("discount").value = " ";
