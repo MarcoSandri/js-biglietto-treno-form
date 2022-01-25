@@ -31,8 +31,8 @@ calculate.addEventListener('click',
 
         
         // Generatore random di numero di carrozza e numero del treno
-        document.getElementById('carriage').innerHTML = Math.floor(Math.random() * 8 + 1);
-        document.getElementById('code').innerHTML = Math.floor(Math.random() * 99998 + 1);
+        document.getElementById('carriage').innerHTML = Math.floor(Math.random() * 9 + 1);
+        document.getElementById('code').innerHTML = Math.floor(Math.random() * 99999 + 1);
         document.getElementById('user').innerHTML = name;
     }
 
