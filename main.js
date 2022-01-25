@@ -1,4 +1,5 @@
 let calculate = document.getElementById("calculate");
+let cancel = document.getElementById("delete");
 let discount = document.getElementById("discount");
 const price = 0.21;
 let discountedPrice;
@@ -7,6 +8,7 @@ let discountedPrice;
 calculate.addEventListener('click',
 
     function() {
+        
         
         let name = document.getElementById("name").value;
         let distance = document.getElementById("distance").value;
@@ -35,9 +37,16 @@ calculate.addEventListener('click',
         document.getElementById('user').innerHTML = name;
     }
 
-    
-    
-
 );
 
+cancel.addEventListener('click',
 
+    function() {
+        
+        document.getElementById("distance").value = " ";
+        document.getElementById("name").value = " ";
+        document.getElementById("discount").value = " ";
+    }
+
+
+);
